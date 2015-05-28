@@ -1,0 +1,153 @@
+html, ul, li, h1, div, header, footer, img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-decoration: inherit;
+  background: transparent;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  content="";
+  display: block;
+  clear: both;
+}
+
+.snake-game {
+  width: 920px;
+  height: 920px;
+  margin: auto;
+  position: relative;
+}
+
+.game-board {
+  width: 600px;
+  height:600px;
+  float: left;
+}
+
+.snake-square {
+  display: block;
+  float: left;
+  height: 30px;
+  width: 30px;
+  background: url("../images/grass.svg");
+  margin: 0;
+}
+
+.snake {
+  background: url("../images/snake-sprite-sheet.svg");
+  background-size: 30px 300px;
+  background-repeat: no-repeat;
+}
+
+.S, .N {
+  background-position: 0 0;
+}
+
+
+.E, .W {
+  background-position: 0 -30px;
+}
+
+.head-N {
+  background-position: 0 -90px;
+}
+
+.head-S {
+  background-position: 0 -120px;
+}
+
+.head-E {
+  background-position: 0 -150px;
+}
+
+.head-W {
+  background-position: 0 -60px;
+}
+
+.tail-N {
+  background-position: 0 -210px;
+}
+
+.tail-S {
+  background-position: 0 -240px;
+}
+
+.tail-E {
+  background-position: 0 -270px;
+}
+
+.tail-W {
+  background-position: 0 -180px;
+}
+
+
+
+.wall {
+  background: url("../images/wall.svg");
+}
+
+/*.head {
+  back
+}*/
+
+.apple {
+  background: url("../images/apple.svg");
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  background: yellow;
+  width: 600px;
+  height: 600px;
+  left: 120px;
+}
+
+
+.overlay.pause {
+  display: block;
+  background: url("../images/pause-screen.png");
+}
+
+.overlay.game-over {
+  display: block;
+  background: url("../images/over-screen.png");
+}
+
+header, footer {
+  display: block;
+  width: 120px;
+  float: left;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  position: relative;
+}
+
+.apple-count {
+  font-family: sans-serif;
+  font-size: 60px;
+  left: 28px;
+  position: absolute;
+  top: 267px;
+}
